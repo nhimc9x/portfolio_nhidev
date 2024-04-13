@@ -5,9 +5,9 @@ function About() {
 
   return (
     <PageSlice bgColor={'blue'}>
-      <div className="w-full h-full grid place-content-center">
+      <div className="w-full h-full grid place-content-center bg-ct-primary-color-950">
         {swiperSlide.isActive &&
-          <div className="size-96 bg-gray-500 text-black text-xl text-center animate-scale-up-center">
+          <div className="size-96 bg-ct-secondary-color-950 text-black text-xl text-center animate-scale-up-center">
           </div>
         }
       </div>
