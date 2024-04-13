@@ -13,9 +13,12 @@ import Project from '../../page/Project/Project'
 import Contact from '../../page/Contact/Contact'
 
 function MainLayout() {
+  const namePages = ['Home', 'About', 'Project', 'Contact']
   const pagination = {
     clickable: true,
-    renderBullet: (index, className) => '<span class="' + className + '"> Home </span>'
+    renderBullet: (index, className) => {
+      return `<span class="${className}">${namePages[index]}</span>`
+    }
   }
 
   return (
