@@ -1,0 +1,23 @@
+.swiper-pagination {
+  --swiper-pagination-right: auto;
+  --swiper-pagination-left: 1%;
+}
+
+.swiper-pagination-bullet {
+  --text-size: 3.6vh;
+  width: max-content;
+  border-radius: 0;
+  margin: 16% 0 !important;
+  text-align: center;
+  height: 4vh;
+  line-height: var(--text-size);
+  font-size: var(--text-size);
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
