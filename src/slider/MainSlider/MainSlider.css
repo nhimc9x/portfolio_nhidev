@@ -1,3 +1,9 @@
+.swiper-slide {
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
 .swiper-pagination {
   --swiper-pagination-left: auto;
   --swiper-pagination-right: .7%;
@@ -8,21 +14,20 @@
   top: -10%;
   bottom: -10%;
   left: 50%;
-  width: .3vh;
+  width: 2.4px;
   background: #80f0ff0b;
 }
 
 .swiper-pagination-bullet {
-  --text-hight: 6vh;
+  --text-hight: 2rem;
   width: 100%;
-  border-radius: 0;
   margin: 0 !important;
   text-align: center;
   height: var(--text-hight);
   line-height: var(--text-hight);
-  letter-spacing: .1vh;
-  font-size: 2.6vh;
-  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: #615c7bcc;
   opacity: 1;
@@ -31,5 +36,6 @@
 
 .swiper-pagination-bullet-active {
   color: #80f0ff;
-  text-shadow: 0 0 .8vh #80f0ff, 0 0 2vh #80f0ffa5, 0 0 4vh #80f0ff6d;
+  text-shadow: 0 0 3px #80f0ff, 0 0 8px #80f0ffa5, 0 0 20px #80f0ff6d;
 }
+

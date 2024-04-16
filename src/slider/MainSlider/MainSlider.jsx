@@ -30,7 +30,7 @@ function MainSlider() {
         effect='fade'
         pagination={pagination}
         modules={[Mousewheel, Pagination, EffectFade]}
-        className="mySwiper w-full h-screen"
+        className="mySwiper w-full h-screen bg-ct-primary-color-950"
       >
         <SwiperSlide>
           <Home />
