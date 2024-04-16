@@ -8,6 +8,7 @@ import './MainSlider.css'
 // import required modules
 import { Mousewheel, Pagination, EffectFade } from 'swiper/modules'
 import Home from '~/slices/Home/Home'
+import About from '~/slices/About/About'
 
 function MainSlider() {
   const namePages = ['Home', 'About', 'Project', 'Contact']
@@ -33,6 +34,9 @@ function MainSlider() {
       >
         <SwiperSlide>
           <Home />
+        </SwiperSlide>
+        <SwiperSlide>
+          <About />
         </SwiperSlide>
       </Swiper>
     </>
