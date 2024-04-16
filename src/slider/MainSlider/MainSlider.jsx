@@ -4,15 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
-import './MainLayout.css'
+import './MainSlider.css'
 // import required modules
 import { Mousewheel, Pagination, EffectFade } from 'swiper/modules'
-import Home from '../../page/Home/Home'
-import About from '../../page/About/About'
-import Project from '../../page/Project/Project'
-import Contact from '../../page/Contact/Contact'
+import Home from '~/slices/Home/Home'
 
-function MainLayout() {
+function MainSlider() {
   const namePages = ['Home', 'About', 'Project', 'Contact']
   const pagination = {
     clickable: true,
@@ -37,18 +34,9 @@ function MainLayout() {
         <SwiperSlide>
           <Home />
         </SwiperSlide>
-        <SwiperSlide>
-          <About />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Project />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Contact />
-        </SwiperSlide>
       </Swiper>
     </>
   )
 }
 
-export default MainLayout
+export default MainSlider
