@@ -8,5 +8,18 @@
 }
 
 html {
-  font-size: 16px;
+  /* font-size: 6vh; */
 }
+
+/* .my-avatar {
+  animation: changecolor 1s ease-in-out infinite alternate;
+}
+
+@keyframes changecolor {
+  from {
+    filter: drop-shadow(0 0 1vh #09779585) drop-shadow(0 0 0vh #09779543);
+  }
+  to {
+    filter: drop-shadow(0 0 2vh #09779585) drop-shadow(0 0 6vh #09779543);
+  }
+} */

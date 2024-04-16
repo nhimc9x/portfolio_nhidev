@@ -1,3 +1,4 @@
+// const plugin = require('tailwindcss/plugin')
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,6 +10,7 @@ export default {
       colors: {
         'ct-text-color': '#a3a1be',
         'ct-active-color': '#80f0ff',
+        'ct-sub-active-color': '#f472b2',
         'ct-primary-color': {
           '50': '#f3f6fb',
           '100': '#e3eaf6',
@@ -37,7 +39,9 @@ export default {
         }
       },
       animation: {
-        'scale-up-center': 'scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both'
+        'scale-up-center': 'scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
+        'fade-shadow': 'fade-shadow 1.2s ease-in-out infinite alternate',
+        'wave': 'wave 2.1s linear infinite'
       },
       keyframes: {
         'scale-up-center': {
@@ -47,10 +51,38 @@ export default {
           to: {
             transform: 'scale(1)'
           }
+        },
+        'fade-shadow': {
+          from: {
+            filter: 'drop-shadow(0 0 1.4vh #09779585) drop-shadow(0 0 2vh #09779543)'
+          },
+          to: {
+            filter: 'drop-shadow(0 0 2vh #09779585) drop-shadow(0 0 6vh #09779543)'
+          }
+        },
+        'wave': {
+          '0%, 60%, 100%': {
+            transform: 'rotate(0deg)'
+          },
+          '10%, 30%': {
+            transform: 'rotate(18deg)'
+          },
+          '20%': {
+            transform: 'rotate(-10deg)'
+          },
+          '40%': {
+            transform: 'rotate(-6deg)'
+          },
+          '50%': {
+            transform: 'rotate(12deg)'
+          }
         }
       }
     }
   },
-  plugins: []
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('tailwindcss-animation-delay')
+  ]
 }
 
