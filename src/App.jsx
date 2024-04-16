@@ -1,9 +1,9 @@
-import MainLayout from './layout/MainLayout/MainLayout'
+import MainSlider from '~/slider/MainSlider/MainSlider'
 
 function App() {
 
   return (
-    <MainLayout />
+    <MainSlider />
   )
 }
 
