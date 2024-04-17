@@ -19,15 +19,15 @@
 }
 
 .swiper-pagination-bullet {
-  --text-hight: 2rem;
+  --text-hight: 1.6rem;
   width: 100%;
   margin: 0 !important;
   text-align: center;
   height: var(--text-hight);
   line-height: var(--text-hight);
   letter-spacing: 1px;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: .8rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: #615c7bcc;
   opacity: 1;
