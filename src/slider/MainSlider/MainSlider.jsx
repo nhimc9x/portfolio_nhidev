@@ -26,7 +26,7 @@ function MainSlider() {
         slidesPerView={1}
         spaceBetween={0}
         mousewheel={true}
-        speed={800}
+        speed={100}
         effect='fade'
         pagination={pagination}
         modules={[Mousewheel, Pagination, EffectFade]}
