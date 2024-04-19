@@ -9,9 +9,10 @@ import './MainSlider.css'
 import { Mousewheel, Pagination, EffectFade } from 'swiper/modules'
 import Home from '~/slices/Home/Home'
 import About from '~/slices/About/About'
+import Skills from '~/slices/Skils/Skills'
 
 function MainSlider() {
-  const namePages = ['Home', 'About', 'Project', 'Contact']
+  const namePages = ['Home', 'About', 'Skills', 'Contact']
   const pagination = {
     clickable: true,
     renderBullet: (index, className) => {
@@ -37,6 +38,9 @@ function MainSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <About />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Skills />
         </SwiperSlide>
       </Swiper>
     </>

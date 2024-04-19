@@ -7,6 +7,12 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'sxs': '375px',
+        'xs': '475px',
+        'sms': '576px',
+        'mdl': '960px'
+      },
       colors: {
         'ct-text-color': '#a3a1be',
         'ct-active-color': '#80f0ff',

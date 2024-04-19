@@ -13,16 +13,16 @@ function About() {
       <div className="flex w-full flex-col-reverse lg:flex-row">
         <div className="basis-3/5 text-lg">
           <div className={generateClassAnimate(
-            'font-semibold uppercase text-ct-sub-active-color mb-2 animate__animated',
+            'font-semibold uppercase text-xl text-ct-sub-active-color mb-2 animate__animated',
             'animate__bounceInLeft',
-            'animate__bounceOutUp'
+            'animate__fadeOutUp animate__faster'
           )}>
             Who I am?
           </div>
           <div className={generateClassAnimate(
             'text-ct-text-color leading-8 animate__animated',
             'animate__bounceIn animation-delay-600',
-            'animate__bounceOutUp'
+            'animate__fadeOutUp animate__faster'
           )}>
             <div className="">
               My name is
@@ -47,8 +47,8 @@ function About() {
         <div className="basis-2/5 flex justify-center items-center">
           <div className={generateClassAnimate(
             'h-full min-h-[380px] w-[300px] rounded p-1.5 overflow-hidden flex justify-center items-center relative animate__animated',
-            'animate__fadeInRight animation-delay-500',
-            'animate__bounceOutUp'
+            'animate__fadeInRight animation-delay-500 animate__faster',
+            'animate__fadeOutUp animate__faster'
           )}>
             <div className="absolute h-[160%] w-[500px] bg-gradient-to-t animate-spin from-cyan-500 to-pink-500"></div>
             <img
