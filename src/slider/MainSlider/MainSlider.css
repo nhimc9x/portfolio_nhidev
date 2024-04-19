@@ -25,9 +25,9 @@
   text-align: center;
   height: var(--text-hight);
   line-height: var(--text-hight);
-  letter-spacing: 1px;
+  letter-spacing: 1.4px;
   font-size: .8rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   color: #615c7bcc;
   opacity: 1;
