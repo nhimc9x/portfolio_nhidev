@@ -10,13 +10,14 @@ import { Mousewheel, Pagination, EffectFade } from 'swiper/modules'
 import Home from '~/slices/Home/Home'
 import About from '~/slices/About/About'
 import Skills from '~/slices/Skils/Skills'
+import Project from '~/slices/Project/Project'
 
 function MainSlider() {
-  const namePages = ['Home', 'About', 'Skills', 'Contact']
+  const nameSlice = ['Home', 'About', 'Skills', 'Project']
   const pagination = {
     clickable: true,
     renderBullet: (index, className) => {
-      return `<span class="${className}">${namePages[index]}</span>`
+      return `<span class="${className}">${nameSlice[index]}</span>`
     }
   }
 
@@ -31,7 +32,7 @@ function MainSlider() {
         effect='fade'
         pagination={pagination}
         modules={[Mousewheel, Pagination, EffectFade]}
-        className="mySwiper w-full h-screen bg-ct-primary-color-950"
+        className="mySwiper1 w-full h-screen bg-ct-primary-color-950"
       >
         <SwiperSlide>
           <Home />
@@ -41,6 +42,9 @@ function MainSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Skills />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Project />
         </SwiperSlide>
       </Swiper>
     </>

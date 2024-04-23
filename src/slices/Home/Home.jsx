@@ -10,6 +10,7 @@ import { ImMail4 } from 'react-icons/im'
 import { IoMdDownload } from 'react-icons/io'
 import clsx from 'clsx'
 import 'animate.css'
+import ButtonLink from '~/components/ButtonLink/ButtonLink'
 
 function Home() {
   const swiperSlideActive = useSwiperSlide().isActive
@@ -39,26 +40,15 @@ function Home() {
             <WrapperIcon icon={<FaFacebook />} />
             <WrapperIcon icon={<ImMail4 />} />
           </div>
-          <a
-            href=''
+          <div
             className={generateClassAnimate(
-              'mt-4 w-28 h-8 p-[1.5px] rounded-full flex items-center justify-center group bg-gradient-to-r from-ct-active-color to-ct-sub-active-color animate__animated',
-              'animate__bounceIn animation-delay-600',
+              'animate__animated',
+              'animate__fadeIn animation-delay-600',
               'animate__fadeOutUp animate__faster'
             )}
           >
-            <div
-              className="w-full h-full uppercase font-semibold rounded-full bg-ct-primary-color-950 flex flex-col justify-center items-center duration-300
-              group-hover:bg-transparent overflow-hidden"
-            >
-              <div className="duration-300 text-ct-primary-color-900 -translate-y-full group-hover:translate-y-[40%]">
-                <IoMdDownload className='text-xl' />
-              </div>
-              <div className="duration-300 text-xs -translate-y-[70%] group-hover:translate-y-[70%]">
-                Get Resume
-              </div>
-            </div>
-          </a>
+            <ButtonLink icon={<IoMdDownload />} title={'Get Resume'} />
+          </div>
         </div>
       </div>
       <div className="basis-1/2 w-full h-full flex justify-center items-center">
