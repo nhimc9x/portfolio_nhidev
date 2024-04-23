@@ -1,10 +1,10 @@
 
-function SkillCard({ generateClassAnimate, index, skillLogo, title, completed }) {
+function SkillCard({ swiperSlideActive, generateClassAnimate, index, skillLogo, title, completed }) {
 
   return (
     <div
       style={{
-        animationDelay: (500 + index * 100) + 'ms'
+        animationDelay: swiperSlideActive ? (500 + index * 100) + 'ms' : '0ms'
       }}
       className={generateClassAnimate(
         'animate__animated',

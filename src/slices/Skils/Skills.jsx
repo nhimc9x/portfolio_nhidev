@@ -50,7 +50,7 @@ function Skills() {
         </div>
         <div className="h-full w-full grid gap-4 sm:grid-cols-5 sms:grid-cols-4 grid-cols-3">
           {mySkills.map((skill, index) =>
-            <SkillCard key={index} generateClassAnimate={generateClassAnimate} index={index} skillLogo={skill.logo} title={skill.title} completed={skill.completed} />
+            <SkillCard key={index} swiperSlideActive={swiperSlideActive} generateClassAnimate={generateClassAnimate} index={index} skillLogo={skill.logo} title={skill.title} completed={skill.completed} />
           )}
         </div>
       </div>
