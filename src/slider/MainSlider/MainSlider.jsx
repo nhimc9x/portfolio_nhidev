@@ -11,9 +11,10 @@ import Home from '~/slices/Home/Home'
 import About from '~/slices/About/About'
 import Skills from '~/slices/Skils/Skills'
 import Project from '~/slices/Project/Project'
+import Contact from '~/slices/Contact/Contact'
 
 function MainSlider() {
-  const nameSlice = ['Home', 'About', 'Skills', 'Project']
+  const nameSlice = ['Home', 'About', 'Skills', 'Project', 'Contact']
   const pagination = {
     clickable: true,
     renderBullet: (index, className) => {
@@ -45,6 +46,9 @@ function MainSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Project />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Contact />
         </SwiperSlide>
       </Swiper>
     </>
