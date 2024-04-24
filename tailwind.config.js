@@ -45,9 +45,10 @@ export default {
         }
       },
       animation: {
-        'scale-up-center': 'scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
+        'scale-up-center': 'scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
         'fade-shadow': 'fade-shadow 1.2s ease-in-out infinite alternate',
-        'wave': 'wave 2.1s linear infinite'
+        'wave': 'wave 2.1s linear infinite',
+        'move-shadow': 'move-shadow 8s linear infinite alternate'
       },
       keyframes: {
         'scale-up-center': {
@@ -56,6 +57,14 @@ export default {
           },
           to: {
             transform: 'scale(1)'
+          }
+        },
+        'move-shadow': {
+          '0%': {
+            left: '0'
+          },
+          to: {
+            left: 'calc(100% - 1.25rem)'
           }
         },
         'fade-shadow': {
