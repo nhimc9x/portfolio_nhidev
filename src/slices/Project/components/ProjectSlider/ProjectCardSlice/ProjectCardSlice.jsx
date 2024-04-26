@@ -32,7 +32,7 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
               {description}
             </div>
           </div>
-          <div className="">
+          <div className="mt-auto">
             <div className="text-gray-300 text-base font-medium mb-2">Technologies</div>
             <div className="flex gap-4 flex-wrap pl-4">
               {technologies.map((tech, index) =>

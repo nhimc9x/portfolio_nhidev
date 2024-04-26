@@ -9,6 +9,8 @@ import reduxLogo from '~/assets/skill_logo/redux.svg'
 import nodejsLogo from '~/assets/skill_logo/nodejs.png'
 import expressLogo from '~/assets/skill_logo/express.png'
 import mongodbLogo from '~/assets/skill_logo/mongoDB.svg'
+import cloudinaryLogo from '~/assets/skill_logo/cloudinary.png'
+import apiLogo from '~/assets/skill_logo/api.png'
 
 import NCSImg from '~/assets/ncsounds-nhidev.png'
 import UComicsImg from '~/assets/comic-universe.png'
@@ -18,11 +20,11 @@ export default [
   {
     id: 0,
     name: 'NCSounds',
-    description: 'As the sun dipped below the horizon, casting a warm golden hue across the sky, Sarah found herself lost in a moment of quiet contemplation. Sitting on the old wooden bench in the park, she watched as the world around her seemed to slow down, embracing the serenity of the evening. The gentle rustle of leaves in the breeze and the distant chirping of crickets provided a soothing soundtrack to her thoughts. Memories, both sweet and bittersweet, flooded her mind, reminding her of moments cherished and lessons learned.',
+    description: 'I have developed a website interface that allows users to access and enjoy NCS music for free. The interface design concept is synthesized from various sources. Users can listen to music, add songs to their favorite lists, create playlists, and download songs. The data of songs and images has been aggregated into a mock data file for use on this website.',
     technologies_used: [
       { name: 'React', logo: reactLogo },
       { name: 'Tailwind', logo: tailwindLogo },
-      { name: 'Vite', logo: gitLogo }
+      { name: 'Cloudinary', logo: cloudinaryLogo }
     ],
     image: NCSImg,
     link: {
@@ -33,12 +35,12 @@ export default [
   {
     id: 1,
     name: 'UComics',
-    description: 'As the sun dipped below the horizon, casting a warm golden hue across the sky, Sarah found herself lost in a moment of quiet contemplation.',
+    description: 'I have developed a comic reading website with features including dark mode, filtering, searching, ranking board... The comic data is retrieved from the API shared by user pth-1641.',
     technologies_used: [
       { name: 'React', logo: reactLogo },
       { name: 'Tailwind', logo: tailwindLogo },
       { name: 'Redux', logo: reduxLogo },
-      { name: 'RestApi', logo: jsLogo }
+      { name: 'REST Api', logo: apiLogo }
     ],
     image: UComicsImg,
     link: {

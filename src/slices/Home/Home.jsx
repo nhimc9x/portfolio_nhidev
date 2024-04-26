@@ -1,5 +1,6 @@
 import { useSwiperSlide } from 'swiper/react'
 import myAvatar from '~/assets/my_avatar.png'
+import homeWall from '~/assets/wall2.png'
 import handWave from '~/assets/wave.png'
 import TextTyping from './componets/TextTyping/TextTyping'
 import WrapperIcon from './componets/WrapperIcon/WrapperIcon'
@@ -51,14 +52,14 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="basis-1/2 w-full h-full flex justify-center items-center">
+      <div className="basis-1/2 w-full h-full flex justify-start items-center">
         <img
           className={generateClassAnimate(
             'animate__animated w-[420px] object-cover',
             'animate__bounceIn',
             'animate__fadeOutUp animate__faster'
           )}
-          src={myAvatar}
+          src={homeWall}
           alt=""
         />
       </div>
