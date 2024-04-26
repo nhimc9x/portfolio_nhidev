@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import ButtonLink from '~/components/ButtonLink/ButtonLink'
 import { GrGithub } from 'react-icons/gr'
 import { SiVercel } from 'react-icons/si'
+import ToolTip from '~/components/ToolTip/ToolTip'
 
 function ProjectCardSlice({ swiperSlideActive, nameProject, description, technologies, imageProject, linkProject }) {
 
@@ -28,6 +29,7 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
       <div className="flex-1 flex gap-6">
         <div className="basis-2/3">
           <div className="mb-2">
+            <div className="text-gray-300 text-base font-medium mb-1">Description</div>
             <div className="text-ct-text-color text-sm text-justify">
               {description}
             </div>
@@ -36,9 +38,11 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
             <div className="text-gray-300 text-base font-medium mb-2">Technologies</div>
             <div className="flex gap-4 flex-wrap pl-4">
               {technologies.map((tech, index) =>
-                <div key={index} className="size-11 grid place-content-center p-1">
-                  <img className='w-full' src={tech.logo} alt="" />
-                </div>
+                <ToolTip key={index} title={tech.name}>
+                  <div className="size-11 grid place-content-center p-1">
+                    <img className='w-full' src={tech.logo} alt="" />
+                  </div>
+                </ToolTip>
               )}
             </div>
           </div>

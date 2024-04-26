@@ -48,7 +48,8 @@ export default {
         'scale-up-center': 'scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
         'fade-shadow': 'fade-shadow 1.2s ease-in-out infinite alternate',
         'wave': 'wave 2.1s linear infinite',
-        'move-shadow': 'move-shadow 8s linear infinite alternate'
+        'move-shadow': 'move-shadow 8s linear infinite alternate',
+        'tooltip-up-bottom': 'tooltip-up-bottom .4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both'
       },
       keyframes: {
         'scale-up-center': {
@@ -90,6 +91,16 @@ export default {
           },
           '50%': {
             transform: 'rotate(12deg)'
+          }
+        },
+        'tooltip-up-bottom': {
+          from : {
+            top: '20%',
+            'opacity': 0.5
+          },
+          to : {
+            top: '0',
+            'opacity': 1
           }
         }
       }
