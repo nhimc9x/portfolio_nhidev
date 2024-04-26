@@ -40,7 +40,12 @@ function About() {
               Apart from coding, some other activities that I love to do include playing football, exploring technology, and watching movies.
             </div>
             <div className="">
-              I am available for any job opportunity that aligns with my skills and aspirations.
+              I am available for
+              <span className='text-ct-active-color'> any job opportunity </span>
+              that aligns with
+              <span className='text-ct-active-color'> my skills </span>
+              and
+              <span className='text-ct-active-color'> aspirations. </span>
             </div>
           </div>
         </div>
