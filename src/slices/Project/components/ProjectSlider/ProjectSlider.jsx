@@ -30,7 +30,7 @@ function ProjectSlider({ swiperSlideActive }) {
         loop={true}
         modules={[EffectCreative]}
         className={generateClassAnimate(
-          'mySwiper2 w-full h-full max-h-[680px] rounded-md animate__animated',
+          'mySwiper2 w-full max-w-[640px] h-full max-h-[460px] rounded-md animate__animated',
           'animate__fadeIn animation-delay-500',
           'animate__fadeOutUp animate__faster'
         )}
