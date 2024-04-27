@@ -1,0 +1,5 @@
+export const env = {
+  EMAIL_SERVICE_ID: import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID,
+  EMAIL_TEMPLATE_ID: import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID,
+  EMAIL_PUBLIC_KEY: import.meta.env.VITE_REACT_APP_EMAIL_PUBLIC_KEY
+}
