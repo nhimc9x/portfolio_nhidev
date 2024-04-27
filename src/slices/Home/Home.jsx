@@ -21,8 +21,8 @@ function Home() {
   }
 
   return (
-    <div className="w-full h-full px-[4%] flex items-center justify-center">
-      <div className="basis-1/2 w-full h-full flex items-center">
+    <div className="w-full h-full px-[4%] flex items-center gap-x-0 gap-y-4 pt-10 mdl:pt-0 flex-col-reverse mdl:flex-row justify-center">
+      <div className="basis-[375px] px-2 w-[375px] h-full flex items-start mdl:items-center justify-center mdl:justify-start">
         <div className="text-3xl w-full font-semibold text-ct-text-color">
           <div className={generateClassAnimate('flex items-center animate__animated', 'animate__bounceInLeft', 'animate__fadeOutUp animate__faster')} >
             <div className="italic">Hi There!</div>
@@ -43,7 +43,7 @@ function Home() {
           </div>
           <div
             className={generateClassAnimate(
-              'animate__animated',
+              'animate__animated mt-4',
               'animate__fadeIn animation-delay-600',
               'animate__fadeOutUp animate__faster'
             )}
@@ -52,10 +52,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="basis-1/2 w-full h-full flex justify-start items-center">
+      <div className="mdl:flex-1 w-full h-max flex justify-center items-center mt-10">
         <img
           className={generateClassAnimate(
-            'animate__animated w-[420px] object-cover',
+            'animate__animated xs:w-[420px] w-[220px] object-cover',
             'animate__bounceIn',
             'animate__fadeOutUp animate__faster'
           )}

@@ -24,10 +24,10 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
   }, [swiperSlideActive])
 
   return (
-    <div className="w-full h-full flex flex-col p-4 rounded-[3px] bg-ct-secondary-color-950">
+    <div className="w-full h-full flex flex-col p-2 xs:p-4 rounded-[3px] bg-ct-secondary-color-950">
       <div className="text-xl font-semibold text-center text-ct-active-color tracking-wider mb-2 uppercase">{nameProject}</div>
-      <div className="flex-1 flex gap-6">
-        <div className="basis-2/3">
+      <div className="flex-1 flex flex-col-reverse sm:flex-row gap-x-3 sm:gap-x-6">
+        <div className="sm:basis-2/3 basis-full">
           <div className="mb-2">
             <div className="text-gray-300 text-base font-medium mb-1">Description</div>
             <div className="text-ct-text-color text-sm text-justify">
@@ -47,8 +47,8 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
             </div>
           </div>
         </div>
-        <div className="basis-1/3">
-          <div ref={boxImgRef} className="w-full h-[90%] bg-transparent rounded-md overflow-hidden shadow-[0_0_30px] shadow-ct-primary-color-950 relative group">
+        <div className="sm:basis-1/3 basis-0">
+          <div ref={boxImgRef} className="w-full h-[90%] max-h-max bg-transparent rounded-md overflow-hidden shadow-[0_0_30px] shadow-ct-primary-color-950 relative group">
             <div className="h-max absolute top-0 left-0">
               <img
                 style={{ '--height': `${boxImgHeight}px` }}

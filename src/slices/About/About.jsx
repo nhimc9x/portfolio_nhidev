@@ -9,9 +9,9 @@ function About() {
     return clsx(className, swiperSlideActive ? animateIn : animateOut)
   }
   return (
-    <div className="w-full h-full px-[4%] flex items-center justify-center">
-      <div className="flex w-full flex-col-reverse lg:flex-row">
-        <div className="basis-3/5 text-lg">
+    <div className="w-full h-full px-[4%] flex items-center justify-center pt-10 mdl:pt-0">
+      <div className="flex w-full flex-col-reverse gap-x-4 xs:gap-y-4 gap-y-2 mdl:flex-row">
+        <div className="basis-3/5 flex-1 text-base mdl:text-lg">
           <div className={generateClassAnimate(
             'font-semibold uppercase text-xl text-ct-sub-active-color mb-2 animate__animated',
             'animate__bounceInLeft',
@@ -20,7 +20,7 @@ function About() {
             Who I am?
           </div>
           <div className={generateClassAnimate(
-            'text-ct-text-color leading-8 animate__animated',
+            'text-ct-text-color leading-7 mdl:leading-8 animate__animated',
             'animate__bounceIn animation-delay-600',
             'animate__fadeOutUp animate__faster'
           )}>
@@ -49,15 +49,15 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="basis-2/5 flex justify-center items-center">
+        <div className="basis-2/5 xs:max-h-full max-h-0 overflow-hidden flex justify-center mdl:justify-start items-center">
           <div className={generateClassAnimate(
-            'h-full min-h-[380px] w-[300px] rounded p-1.5 overflow-hidden flex justify-center items-center relative animate__animated',
+            'h-full min-h-[200px] w-[200px] mdl::min-h-[380px] mdl:w-[300px] rounded p-1.5 overflow-hidden flex justify-center items-center relative animate__animated',
             'animate__fadeInRight animation-delay-500 animate__faster',
             'animate__fadeOutUp animate__faster'
           )}>
-            <div className="absolute h-[160%] w-[500px] bg-gradient-to-t animate-spin from-cyan-500 to-pink-500"></div>
+            <div className="absolute h-[160%] w-[580px] bg-gradient-to-t animate-spin from-cyan-500 to-pink-500"></div>
             <img
-              className="h-full z-10 w-full rounded-sm object-cover object-top"
+              className="h-full mx-auto z-10 w-full rounded-sm object-cover object-top"
               src={mySelfie}
               alt="My Avatar" />
           </div>

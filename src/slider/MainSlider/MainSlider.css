@@ -39,3 +39,28 @@
   text-shadow: 0 0 3px #80f0ff, 0 0 8px #80f0ffa5, 0 0 20px #80f0ff6d;
 }
 
+@media screen and (max-width: 960px) {
+  /* .mySwiper1 .swiper-pagination {
+    --swiper-pagination-left: auto;
+    --swiper-pagination-right: auto;
+    --swiper-pagination-bottom: unset;
+    --swiper-pagination-top: 32px;
+  } */
+  .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+    top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 0 16px;
+    flex-wrap: wrap;
+    transform: translate3d(0, 0, 0);
+  }
+  .mySwiper1 .swiper-pagination-bullet {
+    width: max-content;
+    --text-hight: 2rem;
+  }
+  .mySwiper1 .swiper-pagination::before {
+    display: none;
+  }
+}

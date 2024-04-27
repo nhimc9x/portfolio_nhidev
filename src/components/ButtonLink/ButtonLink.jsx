@@ -6,7 +6,7 @@ function ButtonLink({ onClick, link, icon, title, BtnColor }) {
     <a
       onClick={onClick}
       href={link || ''}
-      className='mt-4 w-max min-w-20 h-8 p-[1.5px] rounded-full flex items-center justify-center group bg-gradient-to-r from-ct-active-color to-ct-sub-active-color'
+      className='w-max min-w-20 h-8 p-[1.5px] rounded-full flex items-center justify-center group bg-gradient-to-r from-ct-active-color to-ct-sub-active-color'
     >
       <div
         className={clsx(

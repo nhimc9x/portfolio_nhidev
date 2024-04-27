@@ -30,7 +30,7 @@ function ProjectSlider({ swiperSlideActive }) {
         loop={true}
         modules={[EffectCreative]}
         className={generateClassAnimate(
-          'mySwiper2 w-full max-w-[640px] h-full max-h-[460px] rounded-md animate__animated',
+          'mySwiper2 w-full py-4 max-w-[660px] h-full max-h-[580px] rounded-md animate__animated',
           'animate__fadeIn animation-delay-500',
           'animate__fadeOutUp animate__faster'
         )}
@@ -38,7 +38,7 @@ function ProjectSlider({ swiperSlideActive }) {
         {myProjectData.map(data =>
           <SwiperSlide
             key={data.id}
-            className='rounded-md overflow-hidden bg-gradient-to-tr from-ct-active-color to-ct-sub-active-color shadow-lg shadow-black/40 p-1'
+            className='rounded-md overflow-hidden bg-gradient-to-tr from-ct-active-color to-ct-sub-active-color shadow-lg shadow-black/40 p-1 mt-10'
           >
             <ProjectCardSlice
               swiperSlideActive={swiperSlideActive}
