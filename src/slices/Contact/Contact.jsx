@@ -20,23 +20,23 @@ function Contact() {
   }
 
   return (
-    <div className="w-full h-full px-[4%] flex items-center justify-center">
+    <div className="w-full h-full px-4 flex items-center justify-center">
       <div className="flex flex-col items-center">
         <div className={generateClassAnimate(
-          'flex mb-8 items-center justify-center animate__animated',
+          'flex mb-8 w-full items-center justify-center animate__animated',
           'animate__fadeIn animation-delay-400',
           'animate__fadeOutUp animate__faster'
         )}>
-          <div className="w-[100px] h-[1px] bg-gradient-to-l from-ct-secondary-color-800 to-transparent"></div>
+          <div className="max-w-[100px] w-full h-[1px] bg-gradient-to-l from-ct-secondary-color-800 to-transparent"></div>
           <div
-            className="text-ct-active-color border border-ct-secondary-color-700 px-3 py-0.5 rounded
+            className="text-ct-active-color border border-ct-secondary-color-700 px-3 text-nowrap py-0.5 rounded
           bg-ct-secondary-color-950 text-lg tracking-wider uppercase font-semibold relative
           before:absolute before:size-5 before:rounded-full before:shadow-[0_0_100px_8px] before:shadow-ct-sub-active-color before:-z-10
           before:top-0 before:left-0 before:animate-pulse"
           >
             Contact Me
           </div>
-          <div className="w-[100px] h-[1px] bg-gradient-to-r from-ct-secondary-color-800 to-transparent"></div>
+          <div className="max-w-[100px] w-full h-[1px] bg-gradient-to-r from-ct-secondary-color-800 to-transparent"></div>
         </div>
         <div className="space-y-4">
           <MyInfo
@@ -55,7 +55,7 @@ function Contact() {
             myInfomation={'234 Hoang Quoc Viet, Bac Tu Liem, Hanoi'}
           />
         </div>
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex gap-4 mb-4">
           <MySocial
             classAnimate={generateClassAnimate('animate__animated', 'animate__bounceIn animation-delay-500', 'animate__fadeOutUp animate__faster')}
             icon={<FaFacebookF />}

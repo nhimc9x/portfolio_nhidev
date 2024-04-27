@@ -28,7 +28,7 @@ function MyInfo({ startIcon, myInfomation, classAnimate }) {
             </div>}
 
         </div>
-        <div className="text-transparent bg-clip-text bg-gradient-to-t from-ct-sub-active-color to-ct-active-color">{myInfomation}</div>
+        <div className="text-transparent flex-1 text-wrap bg-clip-text bg-gradient-to-t from-ct-sub-active-color to-ct-active-color">{myInfomation}</div>
       </div>
     </div>
   )

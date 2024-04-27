@@ -32,10 +32,10 @@ function Skills() {
   }
 
   return (
-    <div className="w-full h-full px-[4%] flex items-center justify-center">
+    <div className="w-full h-full px-[4%] xs:pt-0 pt-6 flex items-center justify-center">
       <div className="">
         <div className={generateClassAnimate(
-          'flex justify-center items-center mb-10 animate__animated',
+          'flex justify-center items-center mb-4 xs:mb-10 animate__animated',
           'animate__fadeIn animation-delay-400',
           'animate__fadeOutUp animate__faster'
         )}>
