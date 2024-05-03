@@ -6,13 +6,10 @@ import './ProjectSlider.css'
 import 'animate.css'
 import { EffectCreative } from 'swiper/modules'
 import ProjectCardSlice from './ProjectCardSlice/ProjectCardSlice'
-import clsx from 'clsx'
+import generateClassAnimate from '~/utils/generateClassAnimate'
 import myProjectData from '~/data/myProjectData'
 
 function ProjectSlider({ swiperSlideActive }) {
-  const generateClassAnimate = (className, animateIn, animateOut) => {
-    return clsx(className, swiperSlideActive ? animateIn : animateOut)
-  }
   return (
     <>
       <Swiper
@@ -30,9 +27,9 @@ function ProjectSlider({ swiperSlideActive }) {
         loop={true}
         modules={[EffectCreative]}
         className={generateClassAnimate(
-          'mySwiper2 w-full py-4 max-w-[660px] h-full max-h-[580px] rounded-md animate__animated',
-          'animate__fadeIn animation-delay-500',
-          'animate__fadeOutUp animate__faster'
+          'mySwiper2 w-full py-4 max-w-[660px] h-full max-h-[580px] rounded-md',
+          swiperSlideActive,
+          'animate__fadeIn animation-delay-500'
         )}
       >
         {myProjectData.map(data =>

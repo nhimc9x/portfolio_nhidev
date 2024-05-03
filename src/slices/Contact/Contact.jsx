@@ -1,5 +1,5 @@
 import { useSwiperSlide } from 'swiper/react'
-import clsx from 'clsx'
+import generateClassAnimate from '~/utils/generateClassAnimate'
 import { MdEmail } from 'react-icons/md'
 import { FaPhone } from 'react-icons/fa6'
 import { FaLocationDot } from 'react-icons/fa6'
@@ -15,17 +15,14 @@ import FormContact from './components/FormContact/FormContact'
 function Contact() {
 
   const swiperSlideActive = useSwiperSlide().isActive
-  const generateClassAnimate = (className, animateIn, animateOut) => {
-    return clsx(className, swiperSlideActive ? animateIn : animateOut)
-  }
 
   return (
     <div className="w-full h-full px-4 flex items-center justify-center">
       <div className="flex flex-col items-center">
         <div className={generateClassAnimate(
-          'flex mb-8 w-full items-center justify-center animate__animated',
-          'animate__fadeIn animation-delay-400',
-          'animate__fadeOutUp animate__faster'
+          'flex mb-8 w-full items-center justify-center',
+          swiperSlideActive,
+          'animate__fadeIn animation-delay-400'
         )}>
           <div className="max-w-[100px] w-full h-[1px] bg-gradient-to-l from-ct-secondary-color-800 to-transparent"></div>
           <div
@@ -40,48 +37,48 @@ function Contact() {
         </div>
         <div className="space-y-4">
           <MyInfo
-            classAnimate={generateClassAnimate('animate__animated', 'animate__fadeInLeft  animation-delay-400 animate__faster', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__fadeInLeft  animation-delay-400 animate__faster')}
             startIcon={<MdEmail />}
             myInfomation={'nhicomputer77@gmail.com'}
           />
           <MyInfo
-            classAnimate={generateClassAnimate('animate__animated', 'animate__fadeInLeft animation-delay-500 animate__faster', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__fadeInLeft animation-delay-500 animate__faster')}
             startIcon={<FaPhone />}
             myInfomation={'+84352924807'}
           />
           <MyInfo
-            classAnimate={generateClassAnimate('animate__animated', 'animate__fadeInLeft animation-delay-600 animate__faster', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__fadeInLeft animation-delay-600 animate__faster')}
             startIcon={<FaLocationDot />}
             myInfomation={'234 Hoang Quoc Viet, Bac Tu Liem, Hanoi'}
           />
         </div>
         <div className="mt-6 flex gap-4 mb-4">
           <MySocial
-            classAnimate={generateClassAnimate('animate__animated', 'animate__bounceIn animation-delay-500', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-500')}
             icon={<FaFacebookF />}
           />
           <MySocial
-            classAnimate={generateClassAnimate('animate__animated', 'animate__bounceIn animation-delay-600', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-600')}
             icon={<FaGithub />}
           />
           <MySocial
-            classAnimate={generateClassAnimate('animate__animated', 'animate__bounceIn animation-delay-700', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-700')}
             icon={<FaLinkedinIn />}
           />
           <MySocial
-            classAnimate={generateClassAnimate('animate__animated', 'animate__bounceIn animation-delay-800', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-800')}
             icon={<FaDiscord />}
           />
           <MySocial
-            classAnimate={generateClassAnimate('animate__animated', 'animate__bounceIn animation-delay-900', 'animate__fadeOutUp animate__faster')}
+            classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-900')}
             icon={<SiZalo />}
           />
         </div>
         <FormContact
           classAnimate={generateClassAnimate(
-            'mt-2 animate__animated',
-            'animate__fadeIn animation-delay-900',
-            'animate__fadeOutUp animate__faster'
+            'mt-2',
+            swiperSlideActive,
+            'animate__fadeIn animation-delay-900'
           )}
         />
       </div>

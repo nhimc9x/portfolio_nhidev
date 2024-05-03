@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import ButtonLink from '~/components/ButtonLink/ButtonLink'
 import { AiFillMessage } from 'react-icons/ai'
 import { useRef, useState } from 'react'
