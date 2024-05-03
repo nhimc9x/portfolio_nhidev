@@ -1,5 +1,5 @@
 import { useSwiperSlide } from 'swiper/react'
-import clsx from 'clsx'
+import generateClassAnimate from '~/utils/generateClassAnimate'
 import SkillCard from './components/SkillCard/SkillCard'
 import htmlLogo from '~/assets/skill_logo/html5.svg'
 import cssLogo from '~/assets/skill_logo/css3.svg'
@@ -27,17 +27,14 @@ let mySkills = [
 
 function Skills() {
   const swiperSlideActive = useSwiperSlide().isActive
-  const generateClassAnimate = (className, animateIn, animateOut) => {
-    return clsx(className, swiperSlideActive ? animateIn : animateOut)
-  }
 
   return (
     <div className="w-full h-full px-[4%] xs:pt-0 pt-6 flex items-center justify-center">
       <div className="">
         <div className={generateClassAnimate(
-          'flex justify-center items-center mb-4 xs:mb-10 animate__animated',
-          'animate__fadeIn animation-delay-400',
-          'animate__fadeOutUp animate__faster'
+          'flex justify-center items-center mb-4 xs:mb-10',
+          swiperSlideActive,
+          'animate__fadeIn animation-delay-400'
         )}>
           <div className="w-[100px] h-[1px] bg-gradient-to-l from-ct-secondary-color-800 to-transparent"></div>
           <div
@@ -50,7 +47,7 @@ function Skills() {
         </div>
         <div className="h-full w-full grid gap-4 sm:grid-cols-5 sms:grid-cols-4 grid-cols-3">
           {mySkills.map((skill, index) =>
-            <SkillCard key={index} swiperSlideActive={swiperSlideActive} generateClassAnimate={generateClassAnimate} index={index} skillLogo={skill.logo} title={skill.title} completed={skill.completed} />
+            <SkillCard key={index} swiperSlideActive={swiperSlideActive} index={index} skillLogo={skill.logo} title={skill.title} completed={skill.completed} />
           )}
         </div>
       </div>

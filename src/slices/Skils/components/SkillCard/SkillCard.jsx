@@ -1,5 +1,6 @@
+import generateClassAnimate from '~/utils/generateClassAnimate'
 
-function SkillCard({ swiperSlideActive, generateClassAnimate, index, skillLogo, title, completed }) {
+function SkillCard({ swiperSlideActive, index, skillLogo, title, completed }) {
 
   return (
     <div
@@ -7,9 +8,9 @@ function SkillCard({ swiperSlideActive, generateClassAnimate, index, skillLogo, 
         animationDelay: swiperSlideActive ? (500 + index * 100) + 'ms' : '0ms'
       }}
       className={generateClassAnimate(
-        'animate__animated',
-        'animate__bounceIn',
-        'animate__fadeOutUp animate__faster'
+        '',
+        swiperSlideActive,
+        'animate__bounceIn'
       )}>
       <div style={{ filter: !completed && 'brightness(.15)', pointerEvents: !completed && 'none' }}
         className="mdl:size-[120px] size-[80px] mdl:text-sm text-xs scale-100 hover:scale-105 rounded-md border border-ct-secondary-color-900 shadow-lg
