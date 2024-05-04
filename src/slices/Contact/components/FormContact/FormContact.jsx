@@ -60,7 +60,7 @@ function FormContact({ classAnimate }) {
     <div
       className={classAnimate}
     >
-      <ButtonLink onClick={handleShowForm} link={'#form'} title={'Send message'} icon={<AiFillMessage />} />
+      <ButtonLink onClick={handleShowForm} linkTo={'#form'} title={'Send message'} icon={<AiFillMessage />} />
       {showModal &&
         <div
           onClick={(e) => handleClickLayer(e)}

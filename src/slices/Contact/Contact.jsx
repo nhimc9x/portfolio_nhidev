@@ -11,6 +11,7 @@ import { SiZalo } from 'react-icons/si'
 import MyInfo from './components/MyInfo/MyInfo'
 import MySocial from './components/MySocial/MySocial'
 import FormContact from './components/FormContact/FormContact'
+import myLinks from '~/data/myLinks'
 
 function Contact() {
 
@@ -54,22 +55,27 @@ function Contact() {
         </div>
         <div className="mt-6 flex gap-4 mb-4">
           <MySocial
+            linkTo={myLinks.facebook}
             classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-500')}
             icon={<FaFacebookF />}
           />
           <MySocial
+            linkTo={myLinks.github}
             classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-600')}
             icon={<FaGithub />}
           />
           <MySocial
+            linkTo={myLinks.linked}
             classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-700')}
             icon={<FaLinkedinIn />}
           />
           <MySocial
+            linkTo={myLinks.discord}
             classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-800')}
             icon={<FaDiscord />}
           />
           <MySocial
+            linkTo={myLinks.zalo}
             classAnimate={generateClassAnimate('', swiperSlideActive, 'animate__bounceIn animation-delay-900')}
             icon={<SiZalo />}
           />

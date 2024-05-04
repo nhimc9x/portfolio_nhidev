@@ -11,6 +11,7 @@ import { IoMdDownload } from 'react-icons/io'
 import generateClassAnimate from '~/utils/generateClassAnimate'
 import 'animate.css'
 import ButtonLink from '~/components/ButtonLink/ButtonLink'
+import myLinks from '~/data/myLinks'
 
 function Home() {
   const swiperSlideActive = useSwiperSlide().isActive
@@ -31,10 +32,10 @@ function Home() {
             <TextTyping className='text-ct-sub-active-color' />
           </div>
           <div className={generateClassAnimate('mt-3 flex gap-3.5', swiperSlideActive, 'animate__fadeIn animation-delay-500')}>
-            <WrapperIcon icon={<GrGithub />} />
-            <WrapperIcon icon={<BiLogoLinkedin />} />
-            <WrapperIcon icon={<FaFacebook />} />
-            <WrapperIcon icon={<ImMail4 />} />
+            <WrapperIcon linkTo={myLinks.github} icon={<GrGithub />} />
+            <WrapperIcon linkTo={myLinks.linked} icon={<BiLogoLinkedin />} />
+            <WrapperIcon linkTo={myLinks.facebook} icon={<FaFacebook />} />
+            <WrapperIcon linkTo={myLinks.email} icon={<ImMail4 />} />
           </div>
           <div
             className={generateClassAnimate(
@@ -43,7 +44,7 @@ function Home() {
               'animate__fadeIn animation-delay-600'
             )}
           >
-            <ButtonLink icon={<IoMdDownload />} title={'Get Resume'} />
+            <ButtonLink icon={<IoMdDownload />} title={'Get Resume'} linkTo={myLinks.downloadCV} />
           </div>
         </div>
       </div>
