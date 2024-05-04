@@ -1,11 +1,11 @@
 import { MdOutlineError } from 'react-icons/md'
 import clsx from 'clsx'
 
-function ButtonLink({ onClick, link, icon, title, BtnColor }) {
+function ButtonLink({ onClick, linkTo, icon, title, BtnColor }) {
   return (
     <a
       onClick={onClick}
-      href={link || ''}
+      href={linkTo || ''}
       className='w-max min-w-20 h-8 p-[1.5px] rounded-full flex items-center justify-center group bg-gradient-to-r from-ct-active-color to-ct-sub-active-color'
     >
       <div

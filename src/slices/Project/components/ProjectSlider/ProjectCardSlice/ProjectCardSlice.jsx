@@ -61,8 +61,8 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
         </div>
       </div>
       <div className="flex gap-4 justify-center mb-2">
-        <ButtonLink link={linkProject.demo} BtnColor='secondary' icon={<SiVercel />} title={'Demo'} />
-        <ButtonLink link={linkProject.source_code} BtnColor='secondary' icon={<GrGithub />} title={'Code'} />
+        <ButtonLink linkTo={linkProject.demo} BtnColor='secondary' icon={<SiVercel />} title={'Demo'} />
+        <ButtonLink linkTo={linkProject.source_code} BtnColor='secondary' icon={<GrGithub />} title={'Code'} />
       </div>
     </div>
   )
