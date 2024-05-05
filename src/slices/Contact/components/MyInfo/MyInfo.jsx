@@ -23,12 +23,16 @@ function MyInfo({ startIcon, myInfomation, classAnimate }) {
 
           {copied &&
             <div
-              className="absolute bg-ct-secondary-color-950 px-1 py-[1px] rounded-sm text-ct-text-color text-[12px] right-[calc(100%+0.25rem)] top-1/2 -translate-y-1/2">
+              className="absolute bg-ct-secondary-color-950 px-1 py-[1px] rounded-sm text-ct-text-color text-[12px]
+              right-1/2 translate-x-1/2 -top-3 sms:right-[calc(100%+0.25rem)] sms:top-1/2 sms:-translate-y-1/2 sms:translate-x-0"
+            >
               Copied
             </div>}
 
         </div>
-        <div className="text-transparent flex-1 text-wrap bg-clip-text bg-gradient-to-t from-ct-sub-active-color to-ct-active-color">{myInfomation}</div>
+        <div className="text-transparent flex-1 text-wrap bg-clip-text bg-gradient-to-t from-ct-sub-active-color to-ct-active-color">
+          {myInfomation}
+        </div>
       </div>
     </div>
   )

@@ -18,7 +18,7 @@ function Home() {
 
   return (
     <div className="w-full h-full px-[4%] flex items-center gap-x-0 gap-y-4 pt-10 mdl:pt-0 flex-col-reverse mdl:flex-row justify-center">
-      <div className="basis-[375px] px-2 w-[375px] h-full flex items-start mdl:items-center justify-center mdl:justify-start">
+      <div className="basis-[375px] pl-4 min-[375px]:px-2 w-[375px] h-full flex items-start mdl:items-center justify-center mdl:justify-start">
         <div className="text-3xl w-full font-semibold text-ct-text-color">
           <div className={generateClassAnimate('flex items-center', swiperSlideActive, 'animate__bounceInLeft')} >
             <div className="italic">Hi There!</div>
