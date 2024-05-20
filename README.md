@@ -16,13 +16,13 @@ This is my personal information website.
 
 This project was built using these technologies.
 
-- Vite
-- React.js
-- TailwindCSS
-- CSS3
-- Swiper
-- Animate.css
-- Emailjs
-- VsCode
-- Vercel
+- `Vite`
+- `React.js`
+- `TailwindCSS`
+- `CSS3`
+- `Swiper`
+- `Animate.css`
+- `Emailjs`
+- `VsCode`
+- `Vercel`
   ...
