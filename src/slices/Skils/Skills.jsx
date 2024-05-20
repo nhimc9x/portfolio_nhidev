@@ -11,11 +11,14 @@ import tailwindLogo from '~/assets/skill_logo/tailwind.svg'
 import gitLogo from '~/assets/skill_logo/git.svg'
 import mongodbLogo from '~/assets/skill_logo/mongoDB.svg'
 import reduxLogo from '~/assets/skill_logo/redux.svg'
+import tsLogo from '~/assets/skill_logo/Typescript_logo.png'
+
 
 let mySkills = [
   { title: 'HTML', logo: htmlLogo, completed: true },
   { title: 'CSS', logo: cssLogo, completed: true },
   { title: 'Javascript', logo: jsLogo, completed: true },
+  { title: 'Typescript', logo: tsLogo, completed: true },
   { title: 'Tailwind', logo: tailwindLogo, completed: true },
   { title: 'React', logo: reactLogo, completed: true },
   { title: 'Git', logo: gitLogo, completed: true },
