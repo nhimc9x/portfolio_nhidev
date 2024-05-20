@@ -17,7 +17,7 @@ This is my personal information website.
 This project was built using these technologies.
 
 - `Vite`
-- `React.js`
+- `Reactjs`
 - `TailwindCSS`
 - `CSS3`
 - `Swiper`
