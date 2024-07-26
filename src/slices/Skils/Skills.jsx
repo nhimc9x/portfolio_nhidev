@@ -12,6 +12,7 @@ import gitLogo from '~/assets/skill_logo/git.svg'
 import mongodbLogo from '~/assets/skill_logo/mongoDB.svg'
 import reduxLogo from '~/assets/skill_logo/redux.svg'
 import tsLogo from '~/assets/skill_logo/Typescript_logo.png'
+import jwtLogo from '~/assets/skill_logo/jwtIcon.png'
 
 
 let mySkills = [
@@ -24,8 +25,9 @@ let mySkills = [
   { title: 'Git', logo: gitLogo, completed: true },
   { title: 'Redux', logo: reduxLogo, completed: true },
   { title: 'NodeJs', logo: nodejsLogo, completed: true },
-  { title: 'ExpressJs', logo: expressLogo, completed: false },
-  { title: 'MongoDB', logo: mongodbLogo, completed: false }
+  { title: 'ExpressJs', logo: expressLogo, completed: true },
+  { title: 'MongoDB', logo: mongodbLogo, completed: true },
+  { title: 'JWT', logo: jwtLogo, completed: true }
 ]
 
 function Skills() {
