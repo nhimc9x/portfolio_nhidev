@@ -48,8 +48,8 @@ function ProjectCardSlice({ swiperSlideActive, nameProject, description, technol
           </div>
         </div>
         <div className="sm:basis-1/3 basis-0">
-          <div ref={boxImgRef} className="w-full h-[90%] max-h-max bg-transparent rounded-md overflow-hidden shadow-[0_0_30px] shadow-ct-primary-color-950 relative group">
-            <div className="h-max absolute top-0 left-0">
+          <div ref={boxImgRef} className="w-full h-[90%] max-h-max bg-transparent rounded-md overflow-hidden shadow-[0_0_30px] shadow-ct-primary-color-950 group">
+            <div className="h-max top-0 left-0">
               <img
                 style={{ '--height': `${boxImgHeight}px` }}
                 className='w-full h-auto group-hover:-translate-y-[calc(100%-var(--height))] transition-all duration-[4000ms]'

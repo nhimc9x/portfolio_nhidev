@@ -13,6 +13,9 @@ import mongodbLogo from '~/assets/skill_logo/mongoDB.svg'
 import reduxLogo from '~/assets/skill_logo/redux.svg'
 import tsLogo from '~/assets/skill_logo/Typescript_logo.png'
 import jwtLogo from '~/assets/skill_logo/jwtIcon.png'
+import nextLogo from '../../assets/skill_logo/nextjs.png'
+import vueLogo from '../../assets/skill_logo/vue3.png'
+import nuxtLogo from '../../assets/skill_logo/nuxt.png'
 
 
 let mySkills = [
@@ -27,7 +30,10 @@ let mySkills = [
   { title: 'NodeJs', logo: nodejsLogo, completed: true },
   { title: 'ExpressJs', logo: expressLogo, completed: true },
   { title: 'MongoDB', logo: mongodbLogo, completed: true },
-  { title: 'JWT', logo: jwtLogo, completed: true }
+  { title: 'JWT', logo: jwtLogo, completed: true },
+  { title: 'NextJs', logo: nextLogo, completed: true },
+  { title: 'VueJs', logo: vueLogo, completed: true },
+  { title: 'NuxtJs', logo: nuxtLogo, completed: true },
 ]
 
 function Skills() {

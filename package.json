@@ -6,7 +6,7 @@
   "author": "Nhideveloper",
   "description": "Trang thông tin cá nhân",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "scripts": {
     "dev": "vite --host",
